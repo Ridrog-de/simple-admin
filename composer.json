@@ -1,0 +1,14 @@
+{
+    "name": "ridrog/simple-admin",
+    "description": "Simple admin area for Laravel",
+    "type": "package",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "autoload": {
+        "psr-4": {
+            "Ridrog\\SimpleAdmin\\": "src/"
+        }
+    }
+
+}
