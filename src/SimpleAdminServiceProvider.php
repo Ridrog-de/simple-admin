@@ -3,7 +3,7 @@
 namespace Ridrog\SimpleAdmin;
 
 use Illuminate\Support\ServiceProvider;
-use Ridrog\Adminarea\Http\Middleware\MustBeAdmin;
+use Ridrog\SimpleAdmin\Http\Middleware\MustBeAdmin;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 
 class SimpleAdminServiceProvider extends ServiceProvider
