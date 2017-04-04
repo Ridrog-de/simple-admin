@@ -26,7 +26,7 @@ to the providers array @ config/app.php
 ```
 'providers' => [
     ...
-    Ridrog\Adminarea\SimpleAdminServiceProvider::class,
+    Ridrog\SimpleAdmin\SimpleAdminServiceProvider::class,
     ...
  ],
 ```
@@ -34,12 +34,12 @@ to the providers array @ config/app.php
 ## Usage
 
 1. Install it
-2. publish nad edit config (if needed)  
-    ```php artisan vendor:publish --tag=adminarea-migrations ```
+2. publish and edit config (if needed)  
+    ```php artisan vendor:publish --tag=adminarea-config ```
 3. Migrate  
 ```php artisan migrate```
 4. Include der Seeder and Seed (if you want)  
-``` $this->call(Ridrog\Adminarea\Database\Seeds\UsersTableSeeder::class); ```  
+``` $this->call(Ridrog\SimpleAdmin\Database\Seeds\UsersTableSeeder::class); ```  
 ``` php artisan db:seed ```
 5. Write your routes  
     With the "admin" middleware
@@ -48,6 +48,10 @@ to the providers array @ config/app.php
 
 
 ### Seed
+
+There should be no need the edit the migration, because you can edit both (the tablename and the column) at the config file
+ 
+
 
 You can seed two users
 1. admin@admin.de : 123456 : _is an admin_

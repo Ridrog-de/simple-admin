@@ -1,6 +1,6 @@
 <?php
 
-namespace Ridrog\Adminarea\Database\Seeds;
+namespace Ridrog\SimpleAdmin\Database\Seeds;
 
 use App\User;
 use Illuminate\Database\Seeder;
