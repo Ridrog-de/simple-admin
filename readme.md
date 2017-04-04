@@ -1,6 +1,7 @@
 # Adminarea
 
 **WIP: Made by a Noob ... don't use it**
+V0.01
 
 This package provides simple middleware, a Gate ``` @can('admin-access)``` and a migration/ seeder
 
