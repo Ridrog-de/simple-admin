@@ -9,6 +9,37 @@
         "psr-4": {
             "Ridrog\\SimpleAdmin\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ridrog\\SimpleAdmin\\Test\\": "tests"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Ridrog\\SimpleAdmin\\SimpleAdminServiceProvider"
+            ],
+            "aliases" : {
+
+            }
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "^5.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.5.0",
+        "orchestra/database": "~3.5.0",
+        "phpunit/phpunit" : "^6.3.1"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "testbench": "composer require --dev \"orchestra/testbench-browser-kit=~3.5\" \"orchestra/database=~3.5\""
+    },
+    "config": {
+        "sort-packages": true
     }
 
 }
